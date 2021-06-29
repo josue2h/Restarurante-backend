@@ -1,0 +1,56 @@
+###
+GET http://localhost:4000/api/sales
+
+###
+POST  http://localhost:4000/api/sales
+Content-Type: application/json
+
+{
+  "nameClient": "josue",
+  "salePrice": 20,
+  "description": "2 plato de pique"
+}
+
+###
+GET http://localhost:4000/api/sales/60d79e2ed6296d54f4842049
+
+###
+DELETE http://localhost:4000/api/sales/60da5d7557d61353fce5507c
+
+###
+PUT http://localhost:4000/api/sales/60d79e2ed6296d54f4842049
+Content-Type: application/json
+
+{
+  "nameClient": "sergio"
+}
+
+
+
+
+
+###
+GET http://localhost:4000/api/menus
+
+###
+POST  http://localhost:4000/api/menus
+Content-Type: application/json
+
+{
+  "nameFood": "pique mixto",
+  "foodPrice": 25
+}
+
+###
+GET http://localhost:4000/api/menus/60d807223cf55a31c47dde79
+
+###
+DELETE http://localhost:4000/api/menus/60d807223cf55a31c47dde79
+
+###
+PUT http://localhost:4000/api/menus/60d807223cf55a31c47dde79
+Content-Type: application/json
+
+{
+  "nameFood": "picante"
+}
